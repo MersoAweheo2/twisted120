@@ -224,8 +224,7 @@ gdjs.ShowControlsCode.condition0IsTrue_0.val = false;
 {
 gdjs.ShowControlsCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.ShowControlsCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playMusic(runtimeScene, "thebrightworld.ogg", true, 100, 1);
-}{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 100);
+{gdjs.evtTools.sound.setGlobalVolume(runtimeScene, 100);
 }}
 
 }
@@ -234,8 +233,6 @@ gdjs.ShowControlsCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJ
 {
 
 
-{
-}
 
 }
 

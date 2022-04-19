@@ -3731,6 +3731,16 @@ gdjs.Level12Code.condition0IsTrue_0.val = gdjs.evtTools.common.logicalNegation(f
 }
 
 
+{
+
+
+{
+{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 1);
+}}
+
+}
+
+
 };gdjs.Level12Code.eventsList58 = function(runtimeScene) {
 
 {

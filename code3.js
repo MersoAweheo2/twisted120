@@ -621,7 +621,7 @@ gdjs.TitleScreenCode.condition0IsTrue_0.val = false;
 gdjs.TitleScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(21751772);
 }
 }if (gdjs.TitleScreenCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "Delay Your Dreams.wav", 1, true, 100, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "Delay Your Dreams.wav", 2, true, 100, 1);
 }}
 
 }
@@ -682,7 +682,7 @@ gdjs.TitleScreenCode.condition0IsTrue_0.val = false;
 gdjs.TitleScreenCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(21757148);
 }
 }if (gdjs.TitleScreenCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "Delay Your Dreams.wav", 1, true, 100, 1);
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "Delay Your Dreams.wav", 2, true, 100, 1);
 }}
 
 }
@@ -868,6 +868,7 @@ gdjs.copyArray(runtimeScene.getObjects("background"), gdjs.TitleScreenCode.GDbac
 {for(var i = 0, len = gdjs.TitleScreenCode.GDbackgroundObjects3.length ;i < len;++i) {
     gdjs.TitleScreenCode.GDbackgroundObjects3[i].rotate(20, runtimeScene);
 }
+}{gdjs.evtTools.sound.stopSoundOnChannel(runtimeScene, 2);
 }}
 
 }
