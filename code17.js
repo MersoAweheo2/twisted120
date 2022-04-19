@@ -1306,7 +1306,6 @@ gdjs.copyArray(runtimeScene.getObjects("portalVersus"), gdjs.Level9Code.GDportal
 gdjs.Level9Code.condition0IsTrue_0.val = false;
 gdjs.Level9Code.condition1IsTrue_0.val = false;
 gdjs.Level9Code.condition2IsTrue_0.val = false;
-gdjs.Level9Code.condition3IsTrue_0.val = false;
 {
 gdjs.Level9Code.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(7)) == 1;
 }if ( gdjs.Level9Code.condition0IsTrue_0.val ) {
@@ -1314,14 +1313,10 @@ gdjs.Level9Code.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumbe
 gdjs.Level9Code.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4)) == 0;
 }if ( gdjs.Level9Code.condition1IsTrue_0.val ) {
 {
-gdjs.Level9Code.condition2IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "F8");
-}if ( gdjs.Level9Code.condition2IsTrue_0.val ) {
-{
-gdjs.Level9Code.condition3IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "F7");
+gdjs.Level9Code.condition2IsTrue_0.val = gdjs.evtTools.input.wasKeyReleased(runtimeScene, "F8");
 }}
 }
-}
-if (gdjs.Level9Code.condition3IsTrue_0.val) {
+if (gdjs.Level9Code.condition2IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("blackPlayer"), gdjs.Level9Code.GDblackPlayerObjects2);
 gdjs.copyArray(runtimeScene.getObjects("portal"), gdjs.Level9Code.GDportalObjects2);
 {for(var i = 0, len = gdjs.Level9Code.GDblackPlayerObjects2.length ;i < len;++i) {
